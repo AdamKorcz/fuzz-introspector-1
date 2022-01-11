@@ -68,6 +68,10 @@ in the OSS-Fuzz environment.
 1. Create a venv: `python3 -m venv /path/to/new/virtual/environment`
 2. Activate the venv
 3. Install dependencies with `pip install -r requirements.txt`
+4. Install system dependencies:
+```bash
+apt-get update && apt-get install -y build-essential texinfo bison cmake
+```
 
 #### Build custom clang
 (expect this part to take at least 1 hour)
