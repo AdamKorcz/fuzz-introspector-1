@@ -615,9 +615,8 @@ input[type="checkbox"] {
 	border-bottom: 7px solid purple;
 }
 .coverage-line-inner.expand-symbol::after {
-  content: "+";
-  background-color: #d000fa;
-  color: white;
+	content:url('arrow.png');
+  color: #999fa8;
   font-weight: bold;
   position: absolute;
   top: 0;
@@ -629,11 +628,11 @@ input[type="checkbox"] {
   align-items: center;
   justify-content: center;
   border-radius: 20px;
+  transform: scale(0.02);
 }
 .coverage-line-inner.collapse-symbol::after {
-  content: "-";
-  background-color: #d000fa;
-  color: white;
+	content:url('arrow.png');
+  color: #999fa8;
   font-weight: bold;
   position: absolute;
   top: 0;
@@ -645,6 +644,7 @@ input[type="checkbox"] {
   align-items: center;
   justify-content: center;
   border-radius: 20px;
+  transform: rotate(90deg) scale(0.02);
 }
 .fuzz-blocker-info-btn {
 	position: absolute;

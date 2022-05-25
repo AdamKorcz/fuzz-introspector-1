@@ -942,3 +942,7 @@ def create_html_report(
     style_dir = os.path.join(basedir, "styling")
     for s in ["clike.js", "prism.css", "prism.js", "styles.css", "custom.js", "calltree.js"]:
         shutil.copy(os.path.join(style_dir, s), s)
+    
+    # Copy arrow icon.
+    basedir = os.path.dirname(os.path.realpath(__file__))
+    shutil.copy(os.path.join(basedir, "arrow.png"), "arrow.png")
